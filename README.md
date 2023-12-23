@@ -1,5 +1,6 @@
 # Department-wise-Sales-Prediction
 Files Structure:
+
 Sales Prediction.ipynb: Contains the Dept-wide-sales for each store project code
 Effects_of_Markdown_and_Weekly_sales.ipynb:contains the weekly_sales prediction for each store project code
 Utilities: Contains my own custom modules for evaluation metrics(EvaluationMetrics.py) and visualization(Visualizations.py)
@@ -12,9 +13,11 @@ Furthermore, stores organizes several promotional markdown events during the yea
 .This dataset comprises of data from several files
 
 stores.csv
+
 This file contains anonymized information about the 45 stores, indicating the type and size of store.
 
 sales.csv
+
 This is the historical training data, which covers to 2010-02-05 to 2012-11-01. Within this file you will find the following fields:
 
 Store - the store number
@@ -39,18 +42,23 @@ Super Bowl: 12-Feb-10, 11-Feb-11, 10-Feb-12, 8-Feb-13
 Labor Day: 10-Sep-10, 9-Sep-11, 7-Sep-12, 6-Sep-13
 Thanksgiving: 26-Nov-10, 25-Nov-11, 23-Nov-12, 29-Nov-13
 Christmas: 31-Dec-10, 30-Dec-11, 28-Dec-12, 27-Dec-13
-Methodology
+
+**Methodology**
+
 Exploratory data analysis
 Visualized the distribution of weekly sales (target variable) and numerical features using histograms. Utilized count plots to display category-wise distributions.
 Generated a plot showcasing the variation in median weekly sales across categories within the categorical input feature.
 Depicted relationships between all numerical features and weekly sales through scatter plots.
-Data Preprocessing
+
+**Data Preprocessing**
 Removed duplicate rows, handled null values and removed rows with negative weekly sales.
 Performed one-hot encoding to encode categorical features and used feature engineering to take Thanksgiving and Christmas weeks into account.
 Removed outlier data from numerical features.
-Data Manipulation
+
+**Data Manipulation**
 Split data into training and test set with 20% of data being held out for testing.
-Feature Selection
+
+**Feature Selection**
 Checking for correlation among features and removing correlated features.
 Used PermutationImportance to select the numerical features.
 Feature Scaling
